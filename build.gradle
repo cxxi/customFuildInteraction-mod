@@ -1,0 +1,13 @@
+buildscript {
+    repositories {
+        maven {
+            url = "https://maven.minecraftforge.net/"
+        }
+        mavenCentral()
+    }
+    dependencies {
+        classpath "net.minecraftforge.gradle:ForgeGradle:6.0.44"
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'

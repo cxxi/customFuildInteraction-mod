@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="customfluidinteraction"
+version="1.0.0"
+displayName="Custom Fluid Interaction"
+authors="Cxxi"
+description='''
+Ajoute une règle de génération : Eau + Magma TConstruct = Deepslate.
+'''
+
+[[dependencies.customfluidinteraction]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.customfluidinteraction]]
+modId="tconstruct"
+mandatory=true
+versionRange="[5.0.0,)"
+ordering="AFTER"
+side="BOTH"
