@@ -16,11 +16,3 @@ include 'services:webservice'
 */
 
 rootProject.name = 'customFuildInteraction'
-
-toolchainManagement {
-    jvm.javaRepositories {
-        repository('foojay') {
-            url = uri('https://api.foojay.io/disco/v3.0/')
-        }
-    }
-}
