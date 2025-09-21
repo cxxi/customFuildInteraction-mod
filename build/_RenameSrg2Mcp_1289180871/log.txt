@@ -1,0 +1,15 @@
+Java Launcher: /usr/lib/jvm/temurin-17-jdk-amd64/bin/java
+Arguments: '--task, SRG_TO_MCP, --input, /home/cxxi/.gradle/caches/modules-2/files-2.1/slimeknights.mantle/Mantle/1.20.1-1.11.87/ad04741aa5bfe11a771983049cbf5c3bbec8ab49/Mantle-1.20.1-1.11.87.jar, --output, /home/cxxi/.gradle/caches/forge_gradle/deobf_dependencies/slimeknights/mantle/Mantle/1.20.1-1.11.87_mapped_official_1.20.1/Mantle-1.20.1-1.11.87_mapped_official_1.20.1.jar, --mcp, /home/cxxi/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip, --strip-signatures'
+Classpath:
+ - /home/cxxi/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/installertools/1.4.4/installertools-1.4.4-fatjar.jar
+Working directory: /var/www/mods/customFuildInteraction/build/_RenameSrg2Mcp_1289180871
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  /home/cxxi/.gradle/caches/modules-2/files-2.1/slimeknights.mantle/Mantle/1.20.1-1.11.87/ad04741aa5bfe11a771983049cbf5c3bbec8ab49/Mantle-1.20.1-1.11.87.jar
+Output: /home/cxxi/.gradle/caches/forge_gradle/deobf_dependencies/slimeknights/mantle/Mantle/1.20.1-1.11.87_mapped_official_1.20.1/Mantle-1.20.1-1.11.87_mapped_official_1.20.1.jar
+MCP:    /home/cxxi/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete
