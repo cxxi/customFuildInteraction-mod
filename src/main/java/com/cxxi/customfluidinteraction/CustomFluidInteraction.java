@@ -14,11 +14,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-
 import slimeknights.tconstruct.fluids.TinkerFluids;
 
-@Mod("customfluidinteraction")
+@Mod(CustomFluidInteraction.MOD_ID)
 public class CustomFluidInteraction {
+    public static final String MOD_ID = "customfluidinteraction";
 
     public CustomFluidInteraction() {
         MinecraftForge.EVENT_BUS.register(this);

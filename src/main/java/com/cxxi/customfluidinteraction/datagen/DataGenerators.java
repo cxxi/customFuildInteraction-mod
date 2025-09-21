@@ -13,15 +13,13 @@ import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = CustomFluidInteraction.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
+    @SubscribeEvent
+    public static void gatherData(GatherDataEvent event) {
+        DataGenerator generator = event.getGenerator();
+        PackOutput packOutput = generator.getPackOutput();
+        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-	@SubscribeEvent
-	public static void gatherData(GatherDataEvent event) {
-
-		DataGenerator generator = event.getGenerator();
-		PackOutput packOutput = generator.getPackOutput();
-		CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-
-		generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
-
-	}
+        generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
+    }
 }
