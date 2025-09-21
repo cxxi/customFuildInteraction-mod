@@ -76,6 +76,9 @@ repositories {
     maven {
         name = "CoFH Maven"
         url = "https://maven.covers1624.net/"
+        content {
+            includeGroup "com.teamcofh"
+        }
     }
 }
 
@@ -89,8 +92,8 @@ dependencies {
     implementation fg.deobf("slimeknights.mantle:Mantle:1.20.1-1.11.87")
     compileOnly fg.deobf("slimeknights.tconstruct:TConstruct:1.20.1-3.10.2.92")
 
-    // Thermal Core
-    implementation fg.deobf("com.teamcofh:cofh_core:1.20.1-11.0.2")
+    // Thermal Series
+    implementation fg.deobf("com.teamcofh:thermal_foundation:1.20.1-11.0.6.70")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
